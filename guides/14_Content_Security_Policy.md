@@ -1,6 +1,6 @@
 # Content Security Policy for applications using the Amazon Chime SDK
 
-Modern web applications use [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) to protect users from certain classes of attacks. Adding a security policy by configuring your web server to return the Content-Security-Policy HTTP header. A guide to use a Lambda@Edge function to inject security headers through CloudFront, see [Adding HTTP Security Headers Using Lambda@Edge and Amazon CloudFront](https://aws.amazon.com/blogs/networking-and-content-delivery/adding-http-security-headers-using-lambdaedge-and-amazon-cloudfront/).
+Modern web applications use [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) to protect users from certain classes of attacks. You can add a security policy by configuring your web server to return the Content-Security-Policy HTTP header or using <meta> element to configure a policy. A guide to use a Lambda@Edge function to inject security headers through CloudFront, see [Adding HTTP Security Headers Using Lambda@Edge and Amazon CloudFront](https://aws.amazon.com/blogs/networking-and-content-delivery/adding-http-security-headers-using-lambdaedge-and-amazon-cloudfront/).
 
 ## Meetings connectivity
 
