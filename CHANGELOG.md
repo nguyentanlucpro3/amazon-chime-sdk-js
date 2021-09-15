@@ -15,7 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Amazon Voice Focus will now trigger the `onCPUWarning` method on the `VoiceFocusTransformDeviceDelegate` when using the default inline execution mode. This will be called when the browser fails to schedule the worklet in a timely fashion (_e.g._, when the meeting code is running in an iframe /subframe) or when changes in the CPU environment (_e.g._, thermal throttling) cause the worklet to take too long for each audio render quantum.
 - The Amazon Voice Focus support check, `VoiceFocusDeviceTransformer.isSupported`, now warns to the logger when run in an iframe, and can be configured to fail in that case.
 - Add `securitypolicyviolation` event listener to listen for CSP violations.
-- Add new documentation page for Content Security Policy setup guide.
+- Add [Content Security Policy](https://aws.github.io/amazon-chime-sdk-js/modules/contentsecurity_policy.html) setup guide for customers who want to secure their application and want to add csp headers.
 
 ### Changed
 
