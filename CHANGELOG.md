@@ -16,6 +16,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 - Add safeguard for Nscale policy in case we increase to more than 25 videos.
+- Add safeguard in `ReceivedVideoInputTask` to prevent crashing when video input stream does not contain any video 
+  track.
 
 ### Changed
 - Move `toLowerCasePropertyNames` inside `Utils.ts` and add test coverage.

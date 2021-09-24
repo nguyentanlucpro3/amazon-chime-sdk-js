@@ -56,6 +56,9 @@ export default class ReceiveVideoInputTask extends BaseTask {
     this.context.activeVideoInput = videoInput;
     if (videoInput) {
       const videoTracks = videoInput.getVideoTracks();
+      if (!videoTracks || videoTracks.length === 0) {
+        return;
+      }
       const attendeeId = this.context.meetingSessionConfiguration.credentials.attendeeId;
       const trackSettings = videoTracks[0].getSettings();
       if (this.context.enableSimulcast) {
